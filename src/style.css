@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+p {
+  font-weight: 400;
+}
+
+header nav {
+  background-color: #292929;
+  padding: 25px 40px;
+}
+
+header nav img {
+  width: 140px;
+}
+
+header .home {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 30px;
+}
+
+header .home h2 {
+  width: 40%;
+  color: white;
+  font-size: 2.6rem;
+}
+
+form {
+  width: 96%;
+  margin: 20px auto;
+}
+
+form input {
+  margin: 10px 0;
+  width: 90%;
+  padding: 10px;
+}
+
+.movie-data {
+  width: 90%;
+  margin: auto;
+}
+
+.movie-data .movie-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+}
+
+.movie-data .movie-div .movies {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+  border-radius: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movie-data .movie-div .movies h3 {
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 24px;
+  }
+  header nav {
+    padding: 25px 77px;
+  }
+  header .home {
+    padding-left: 80px;
+  }
+  header .home h2 {
+    width: 30%;
+    color: white;
+    font-size: 2.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

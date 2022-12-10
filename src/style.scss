@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+p {
+  font-weight: 400;
+}
+
+header {
+  nav {
+    background-color: #292929;
+    padding: 25px 40px;
+    img {
+      width: 140px;
+    }
+  }
+  .home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    h2 {
+      width: 40%;
+      color: white;
+      font-size: 2.6rem;
+    }
+  }
+}
+
+form {
+  width: 96%;
+  margin: 20px auto;
+  input {
+    margin: 10px 0;
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+.movie-data {
+  width: 90%;
+  margin: auto;
+  .movie-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    column-gap: 0px;
+    .movies {
+      width: 90%;
+      margin: 20px auto;
+      height: 300px;
+      border-radius: 12px;
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 24px;
+  }
+  header {
+    nav {
+      padding: 25px 77px;
+    }
+    .home {
+      padding-left: 80px;
+
+      h2 {
+        width: 30%;
+        color: white;
+        font-size: 2.6rem;
+      }
+    }
+  }
+}
